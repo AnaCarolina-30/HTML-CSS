@@ -12,13 +12,14 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
-            background-color: lightgrey;
+            background-color: lightgray;
         }
 
         td, th {
@@ -26,8 +27,14 @@
             padding: 10px;
         }
 
+        thead > tr >th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(61, 61, 61);
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(61, 61, 61);
             color: white;
         }
 
